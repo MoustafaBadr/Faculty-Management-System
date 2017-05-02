@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="695.0" prefWidth="1350.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.BadrRetrievedController">
+   <children>
+      <ImageView fitHeight="167.0" fitWidth="177.0" layoutX="126.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/learning.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="191.0" fitWidth="150.0" layoutX="572.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/user_manage.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="939.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="1015.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Logomakr_5WRQaS.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="112.0" layoutY="415.0" onAction="#stud" prefHeight="44.0" prefWidth="195.0" style="-fx-background-color: #30A9DE;" text="Students" textFill="#fcfcfc">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="549.0" layoutY="415.0" onAction="#emp" prefHeight="44.0" prefWidth="195.0" style="-fx-background-color: #30A9DE;" text="Employees" textFill="#fcfcfc">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="1017.0" layoutY="415.0" onAction="#courseaction" prefHeight="44.0" prefWidth="195.0" style="-fx-background-color: #30A9DE;" text="Courses" textFill="#fcfcfc">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="1114.0" layoutY="613.0" onAction="#back6" prefHeight="44.0" prefWidth="195.0" style="-fx-background-color: #30A9DE;" text="back" textFill="#f8f4f4">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</Pane>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="695" prefWidth="1350" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MainFrameController">
+   <children>
+      <AnchorPane prefHeight="699.0" prefWidth="1354.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="95.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/1478068594_EditDocument.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="95.0" layoutY="412.0" onAction="#admin" prefHeight="36.0" prefWidth="150.0" style="-fx-background-color: #30A9DE;" text="Manage" textFill="#fffafa">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="614.0" layoutY="412.0" onAction="#courses" prefHeight="36.0" prefWidth="150.0" style="-fx-background-color: #30A9DE;" text="Courses" textFill="#fffafa">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="614.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/1478068690__layers.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="1097.0" layoutY="411.0" onAction="#BadrRetrieved" prefHeight="36.0" prefWidth="150.0" style="-fx-background-color: #30A9DE;" text="Retriev Data" textFill="#fffafa">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="1097.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/1478068753_BT_database_export.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

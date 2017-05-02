@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+
+<Pane fx:id="combostudent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="695.0" prefWidth="1350.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CorsController">
+   <children>
+      <JFXButton buttonType="RAISED" layoutX="1131.0" layoutY="637.0" onAction="#back6" prefHeight="44.0" prefWidth="195.0" style="-fx-background-color: #30A9DE;" text="Back" textFill="#f8f3f3">
+         <font>
+            <Font size="18.0" />
+         </font></JFXButton>
+      <Label layoutX="97.0" layoutY="79.0" prefHeight="44.0" prefWidth="230.0" text="Retreieve Corses By" textFill="#30a9de">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="CorsesBox" layoutX="379.0" layoutY="79.0" prefHeight="44.0" prefWidth="432.0" style="-fx-background-color: #fcfafa;" />
+      <JFXButton fx:id="Retrieve" buttonType="RAISED" layoutX="889.0" layoutY="637.0" onAction="#loaddatafromDB" prefHeight="44.0" prefWidth="195.0" style="-fx-background-color: #30A9DE;" text="Retrieve" textFill="#f8f3f3">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="Corsechoise" focusColor="#30a9de" labelFloat="true" layoutX="842.0" layoutY="80.0" maxWidth="463.0" minWidth="128.0" prefHeight="44.0" prefWidth="463.0" promptText="enter your choise" style="-fx-background-color: #fcfafa;">
+         <font>
+            <Font size="18.0" />
+         </font></JFXTextField>
+      <TableView fx:id="corsetable" layoutX="52.0" layoutY="168.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="1284.0">
+         <columns>
+            <TableColumn fx:id="d_name" prefWidth="240.0" text="Department_Name" />
+            <TableColumn fx:id="NAME" prefWidth="219.0" text="Name" />
+            <TableColumn fx:id="COST" prefWidth="382.0" text="Cost" />
+         </columns>
+         <columnResizePolicy>
+            <!--<TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />-->
+         </columnResizePolicy>
+      </TableView>
+      <ImageView fitHeight="69.0" fitWidth="112.0" layoutX="28.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/retrieve.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

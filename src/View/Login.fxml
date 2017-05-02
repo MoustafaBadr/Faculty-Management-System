@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="542.0" prefWidth="611.0" scaleShape="false" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginController">
+   <children>
+      <JFXButton fx:id="button" buttonType="RAISED" layoutX="229.0" layoutY="438.0" onAction="#handleButtonAction" prefHeight="36.0" prefWidth="153.0" style="-fx-background-color: #30A9DE;" text="LOGIN" textFill="#fcfafa">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXPasswordField fx:id="pass" focusColor="#30a9de" labelFloat="true" layoutX="83.0" layoutY="321.0" maxWidth="445.0" minWidth="255.0" prefHeight="36.0" prefWidth="445.0" promptText="Password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXTextField fx:id="name" focusColor="#30a9de" labelFloat="true" layoutX="77.0" layoutY="222.0" maxWidth="457.0" minWidth="210.0" prefHeight="36.0" prefWidth="457.0" promptText="User  Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <ImageView fitHeight="125.0" fitWidth="141.0" layoutX="243.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/login.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

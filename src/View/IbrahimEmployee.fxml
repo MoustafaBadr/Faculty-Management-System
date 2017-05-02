@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+
+<Pane prefHeight="695.0" prefWidth="1350.0" style="-: #CE4141;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.IbrahimEmployeeController">
+    <children>
+        <Text layoutX="68.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <TextField id="textFields" fx:id="fNameTF" layoutX="170.0" layoutY="161.0" prefHeight="30.0" prefWidth="154.0" promptText="First name">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+        <TextField id="textFields" fx:id="lNameTF" layoutX="334.0" layoutY="161.0" prefHeight="30.0" prefWidth="154.0" promptText="Last name">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+        <TextField id="textFields" fx:id="addressTF" layoutX="170.0" layoutY="211.0" prefHeight="30.0" prefWidth="154.0" promptText="Address">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+        <Text layoutX="61.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <Text layoutX="60.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="City">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <TextField id="textFields" fx:id="cityTF" layoutX="169.0" layoutY="259.0" prefHeight="30.0" prefWidth="154.0" promptText="City">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+        <TextField id="textFields" fx:id="stateTF" layoutX="169.0" layoutY="314.0" prefHeight="30.0" prefWidth="154.0" promptText="State of province">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+        <Text layoutX="58.0" layoutY="329.0" strokeType="OUTSIDE" strokeWidth="0.0" text="State of province">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <Text layoutX="56.0" layoutY="393.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone number">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <TextField id="textFields" fx:id="phoneNumberTF" layoutX="169.0" layoutY="373.0" prefHeight="30.0" prefWidth="154.0" promptText="Phone number">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+        <TextField id="textFields" fx:id="emailTF" layoutX="169.0" layoutY="427.0" prefHeight="30.0" prefWidth="154.0" promptText="E-mail">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+        <Text layoutX="52.0" layoutY="447.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-Mail">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <JFXButton fx:id="saveBtn" buttonType="RAISED" layoutX="1119.0" layoutY="626.0" onAction="#saveData" prefHeight="41.0" prefWidth="185.0" style="-fx-background-color: #30A9DE;" text="Save">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </JFXButton>
+        <JFXButton fx:id="delete" buttonType="RAISED" layoutX="583.0" layoutY="626.0" onAction="#del" prefHeight="41.0" prefWidth="185.0" style="-fx-background-color: #30A9DE;" text="delete">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" layoutX="70.0" layoutY="626.0" onAction="#back" prefHeight="41.0" prefWidth="185.0" style="-fx-background-color: #30A9DE;" text="Back">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </JFXButton>
+        <Text layoutX="53.0" layoutY="501.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salary">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <TextField id="textFields" fx:id="salaryTF" layoutX="169.0" layoutY="481.0" prefHeight="30.0" prefWidth="154.0" promptText="Salary">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+        <JFXButton buttonType="RAISED" layoutX="684.0" layoutY="38.0" prefHeight="41.0" prefWidth="653.0" style="-fx-background-color: #fcfaaa;" text="Manege Employee">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" layoutX="39.0" layoutY="38.0" onAction="#stud" prefHeight="41.0" prefWidth="617.0" style="-fx-background-color: #30A9DE;" text="Manege Student">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </JFXButton>
+      <JFXButton fx:id="update" buttonType="RAISED" layoutX="854.0" layoutY="626.0" onAction="#up" prefHeight="41.0" prefWidth="185.0" style="-fx-background-color: #30A9DE;" text="update">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="resetBtn2" buttonType="RAISED" layoutX="334.0" layoutY="626.0" onAction="#resetFields" prefHeight="41.0" prefWidth="185.0" style="-fx-background-color: #30A9DE;" text="Reset">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="table" layoutX="538.0" layoutY="161.0" prefHeight="390.0" prefWidth="772.0">
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+         <columns>
+            <TableColumn fx:id="id" prefWidth="75.0" text="id" visible="false" />
+            <TableColumn fx:id="first_name" prefWidth="75.0" text="First_Name" />
+            <TableColumn fx:id="last_name" prefWidth="75.0" text="Last_Name" />
+            <TableColumn fx:id="state" prefWidth="75.0" text="State" />
+            <TableColumn fx:id="address" prefWidth="75.0" text="Address" />
+            <TableColumn fx:id="city" prefWidth="75.0" text="City" />
+            <TableColumn fx:id="phone_num" prefWidth="75.0" text="Phone_number" />
+            <TableColumn fx:id="email" prefWidth="75.0" text="Email" />
+            <TableColumn fx:id="salary" prefWidth="75.0" text="Salary" />
+         </columns>
+      </TableView>
+    </children>
+</Pane>

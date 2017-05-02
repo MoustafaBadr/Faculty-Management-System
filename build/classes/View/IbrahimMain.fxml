@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="695.0" prefWidth="1350.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.IbrahimMainController">
+    <children>
+        <JFXButton buttonType="RAISED" layoutX="29.0" layoutY="28.0" prefHeight="41.0" prefWidth="617.0" style="-fx-background-color: #fcfaaa;" text="Manege Student">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" layoutX="674.0" layoutY="28.0" onAction="#employee" prefHeight="41.0" prefWidth="653.0" style="-fx-background-color: #30A9DE;" text="Manege Employee">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </JFXButton>
+        <Pane layoutX="22.0" layoutY="83.0" prefHeight="596.0" prefWidth="1308.0">
+            <children>
+                <Text layoutX="29.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Text>
+                <TextField id="textFields" fx:id="fNameTF" layoutX="120.0" layoutY="61.0" prefHeight="30.0" prefWidth="283.0" promptText="First name">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </TextField>
+                <TextField id="textFields" fx:id="lNameTF" layoutX="500.0" layoutY="61.0" prefHeight="30.0" prefWidth="309.0" promptText="Last name">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </TextField>
+                <TextField id="textFields" fx:id="addressTF" layoutX="120.0" layoutY="118.0" prefHeight="30.0" prefWidth="283.0" promptText="Address">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </TextField>
+                <Text layoutX="23.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Text>
+                <Text layoutX="26.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="City">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Text>
+                <TextField id="textFields" fx:id="cityTF" layoutX="120.0" layoutY="169.0" prefHeight="30.0" prefWidth="283.0" promptText="City">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </TextField>
+                <TextField id="textFields" fx:id="stateTF" layoutX="120.0" layoutY="224.0" prefHeight="30.0" prefWidth="283.0" promptText="State of province">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </TextField>
+                <Text layoutX="7.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="State of province">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Text>
+                <Text layoutX="11.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E_Mail">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Text>
+                <TextField id="textFields" fx:id="emailTF" layoutX="120.0" layoutY="400.0" prefHeight="30.0" prefWidth="283.0" promptText="E_Mail">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </TextField>
+                <TextField id="textFields" fx:id="countryTF" layoutX="120.0" layoutY="283.0" prefHeight="30.0" prefWidth="283.0" promptText="Country">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </TextField>
+                <Text layoutX="13.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Country">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Text>
+                <Text layoutX="4.0" layoutY="359.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone number">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Text>
+                <TextField id="textFields" fx:id="phoneNumberTF" layoutX="120.0" layoutY="339.0" prefHeight="30.0" prefWidth="283.0" promptText="Phone number">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </TextField>
+                <TextField id="textFields" fx:id="graduationTF" layoutX="120.0" layoutY="460.0" prefHeight="30.0" prefWidth="283.0" promptText="Graduation year">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </TextField>
+                <Text layoutX="-2.0" layoutY="480.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Graduation year">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Text>
+                <JFXButton fx:id="saveBtn" buttonType="RAISED" layoutX="92.0" layoutY="523.0" onAction="#saveData" prefHeight="41.0" prefWidth="185.0" style="-fx-background-color: #30A9DE;" text="Save">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </JFXButton>
+                <JFXButton fx:id="resetBtn" buttonType="RAISED" layoutX="327.0" layoutY="523.0" onAction="#resetfields" prefHeight="41.0" prefWidth="185.0" style="-fx-background-color: #30A9DE;" text="Reset">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </JFXButton>
+                <JFXButton fx:id="backBtn" buttonType="RAISED" layoutX="1075.0" layoutY="523.0" onAction="#back2" prefHeight="41.0" prefWidth="185.0" style="-fx-background-color: #30A9DE;" text="Back">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="589.0" layoutY="523.0" onAction="#updatestudent" prefHeight="41.0" prefWidth="185.0" style="-fx-background-color: #30A9DE;" text="Update" />
+            <JFXButton buttonType="RAISED" layoutX="835.0" layoutY="523.0" onAction="#delete" prefHeight="41.0" prefWidth="185.0" style="-fx-background-color: #30A9DE;" text="Delete" />
+            <TableView fx:id="table" layoutX="428.0" layoutY="99.0" prefHeight="369.0" prefWidth="899.0">
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+               <columns>
+                  <TableColumn fx:id="student_id" prefWidth="75.0" text="Student_ID" visible="false" />
+                  <TableColumn fx:id="first_name" prefWidth="75.0" text="First_Name" />
+                  <TableColumn fx:id="last_name" prefWidth="75.0" text="Last_Name" />
+                  <TableColumn fx:id="address" prefWidth="75.0" text="Address" />
+                  <TableColumn fx:id="city" prefWidth="75.0" text="City" />
+                  <TableColumn fx:id="state" prefWidth="75.0" text="State" />
+                  <TableColumn fx:id="country" prefWidth="75.0" text="Country" />
+                  <TableColumn fx:id="phone_num" prefWidth="75.0" text="Phone_Number" />
+                  <TableColumn fx:id="email" prefWidth="75.0" text="Email" />
+                  <TableColumn fx:id="graduation_year" prefWidth="76.0" text="Graduation_Year" />
+               </columns>
+            </TableView>
+            </children>
+        </Pane>
+    </children>
+</Pane>
